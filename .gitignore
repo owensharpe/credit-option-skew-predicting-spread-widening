@@ -1,0 +1,44 @@
+# Data. Bloomberg data can't be redistributed, so none of it goes public.
+# Anchored to the repo root so the credit_engine/data/ package isn't caught.
+/data/
+/Data/
+/raw/
+*.xlsx
+*.xlsm
+*.xls
+*.csv
+*.parquet
+*.pkl
+*.pickle
+*.feather
+*.h5
+*.hdf5
+
+# Bloomberg output. Kept to output folders and non-code files, so a loader
+# module like bloomberg.py can still be committed.
+bbg_output/
+bloomberg_output/
+*.bbg
+*.txt.bbg
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+secrets*
+credentials*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
